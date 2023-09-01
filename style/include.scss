@@ -1,0 +1,50 @@
+.barre_de_recherche{
+    @include recherche;
+}
+ul{
+    @include ul;
+}
+li{
+    @include li;
+}
+body{
+    @include body;
+}
+#accueil{
+    @include accueil;
+}
+.big_case{
+    @include big_case;
+}
+.midlle_case{
+    @include midlle_case;
+}
+.smalle_case{
+    @include smalle_case;
+}
+.multiple_cases{
+    @include multiple_cases;
+}
+
+a:link {
+    @include a_link;
+  }
+
+a:visited {
+    @include a_visited;
+}
+p{
+    @include p;
+}
+img{
+    @include img;
+}
+.buton_recherche{
+    @include buton_recherche;
+}
+.buton_github{
+    @include buton_github;
+}
+.butons{
+    @include butons;
+}

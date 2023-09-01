@@ -1,0 +1,118 @@
+
+@mixin body{
+    border: none;
+    margin: 0px;
+    width: 100%;
+    background: #ebebeb;
+}
+
+@mixin recherche{
+    background-color: $bleu_sombre;
+    height: 80px;
+}
+
+@mixin ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    background-color: #c6cad5;
+}
+
+@mixin li{
+    color: white;
+    padding: 10px 10px 0px 10px;
+    height: 30px;
+&:hover{
+    box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+    border-radius: 10px;
+}}
+
+@mixin a_link{
+    color: rgb(0, 151, 211);
+    text-decoration: none;
+  }
+  
+@mixin a_visited{
+    color: #3c4041;
+    text-decoration: none;
+}
+
+@mixin accueil{
+    margin-right: 25%;
+}
+@mixin big_case{
+    height: 330px;
+    width: 80%;
+    background-color: #c6cad5;
+    margin: 4%;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+@mixin midlle_case{
+    height: 450px;
+    width: 33%;
+    background-color: #ffffff;
+    margin: 4%;
+    border-radius: 20px;
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;}
+}
+
+@mixin smalle_case{
+    height: 200px;
+    width: 33%;
+    background-color: #ffffff;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+@mixin multiple_cases{
+    display: flex;
+}
+
+@mixin p{
+    color: #000000;
+    font-size: 27px;
+    text-align: center;
+}
+
+@mixin img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+
+}
+
+@mixin buton_recherche{
+    width: 30%;
+    padding: 3%;
+    background-color: gainsboro;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;
+}}
+
+@mixin buton_github{
+    width: 30%;
+    padding: 3%;
+    background-color: gainsboro;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    left: 20%;
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;}
+}
+@mixin butons{
+    display: flex;
+    bottom: 50px;
+    position: relative;
+}
