@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+.barre_de_recherche {
+  background-color: rgb(19, 15, 75);
+  height: 80px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  background-color: #c6cad5;
+  margin-top: 0px;
+}
+@media (min-width: 260px) {
+  ul {
+    font-size: 10px;
+  }
+}
+@media (min-width: 500px) {
+  ul {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  ul {
+    font-size: 17px;
+  }
+}
+@media (min-width: 992px) {
+  ul {
+    font-size: 22px;
+  }
+}
+
+li {
+  color: white;
+  padding: 10px 10px 0px 10px;
+  height: 30px;
+}
+li:hover {
+  box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+  border-radius: 10px;
+}
+
+body {
+  border: none;
+  margin: 0px;
+  width: 100%;
+  background: #ebebeb;
+  display: grid;
+}
+
+@media (min-width: 260px) {
+  #accueil {
+    margin-right: 0%;
+  }
+}
+@media (min-width: 768px) {
+  #accueil {
+    margin-right: 25%;
+  }
+}
+
+.big_case {
+  width: 80%;
+  background-color: #c6cad5;
+  margin: 4%;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+.index {
+  color: #000000;
+  font-size: 47px;
+  text-align: center;
+}
+@media (min-width: 260px) {
+  .index {
+    font-size: 30px;
+  }
+}
+@media (min-width: 500px) {
+  .index {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .index {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .index {
+    font-size: 55px;
+  }
+}
+
+.profil {
+  color: #000000;
+  font-size: 27px;
+  text-align: center;
+}
+
+.midlle_case {
+  background-color: #ffffff;
+  margin: 4%;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.midlle_case:hover {
+  box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+  border-radius: 10px;
+}
+@media (min-width: 260px) {
+  .midlle_case {
+    width: 35%;
+  }
+}
+@media (min-width: 500px) {
+  .midlle_case {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .midlle_case {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .midlle_case {
+    width: 40%;
+  }
+}
+
+.smalle_case {
+  height: 200px;
+  width: 33%;
+  background-color: #ffffff;
+  margin: 3%;
+  border-radius: 20px;
+}
+
+.multiple_cases {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+a:link {
+  color: rgb(0, 151, 211);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3c4041;
+  text-decoration: none;
+}
+
+p {
+  color: #000000;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.buton_recherche {
+  width: 30%;
+  padding: 3%;
+  background-color: gainsboro;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  left: 20px;
+}
+.buton_recherche:hover {
+  box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+  border-radius: 10px;
+}
+
+.buton_github {
+  width: 30%;
+  padding: 3%;
+  background-color: gainsboro;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+.buton_github:hover {
+  box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+  border-radius: 10px;
+}
+
+.butons {
+  display: flex;
+  bottom: 50px;
+  position: relative;
+}
+
+.index_page {
+  text-align: center;
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #555;
+  font-family: "Roboto";
+  font-weight: 300;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  display: grid;
+  width: 100%;
+}
+@media (min-width: 260px) {
+  .index_page {
+    height: 385%;
+    font-size: 30px;
+  }
+}
+@media (min-width: 500px) {
+  .index_page {
+    height: 330%;
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .index_page {
+    height: 240%;
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .index_page {
+    height: 240%;
+    font-size: 72px;
+  }
+}
+
+.texte1 {
+  padding-top: 50px;
+}
+
+.div {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.div:first-of-type {
+  animation: showup 4s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.div:last-of-type {
+  animation: reveal 4s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.div:last-of-type span {
+  animation: slidein 4s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -2000px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
