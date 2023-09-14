@@ -1,0 +1,293 @@
+// Small devices
+@mixin phone {
+    @media (min-width: #{$screen-phone}) {
+        @content;
+    }
+ }
+ @mixin phone-large {
+    @media (min-width: #{$screen-phone-large}) {
+        @content;
+    }
+ }
+ // Medium devices
+ @mixin tablet {
+    @media (min-width: #{$screen-tablet}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin desktop {
+    @media (min-width: #{$screen-desktop}) {
+        @content;
+    }
+ }
+
+
+
+@mixin body{
+    border: none;
+    margin: 0px;
+    width: 100%;
+    background: #0F1C33;
+    display: grid;
+}
+
+@mixin recherche{
+    background-color: $bleu_sombre;
+    height: 80px;
+}
+
+@mixin ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    background-color: #c6cad5;
+    margin-top: 0px;
+    @include phone {
+        font-size: 10px;
+    }
+    @include phone-large() {
+        font-size: 15px;
+
+    }
+    @include tablet {
+        font-size: 17px;
+    }
+    @include desktop() {
+        font-size: 22px;
+
+    }
+}
+
+@mixin li{
+    color: white;
+    padding: 10px 10px 0px 10px;
+    height: 30px;
+&:hover{
+    box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+    border-radius: 10px;
+}}
+
+@mixin a_link{
+    color: rgb(0, 151, 211);
+    text-decoration: none;
+  }
+  
+@mixin a_visited{
+    color: #3c4041;
+    text-decoration: none;
+}
+
+
+
+@mixin accueil{
+    @include phone {
+        margin-right: 0%;
+    }
+    @include tablet {
+        margin-right: 25%;
+    }
+    }
+
+
+@mixin big_case{
+    width: 80%;
+    background-color: #9fb0b9;
+    margin: 4%;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+@mixin index{
+    color: #000000;
+    font-size: 47px;
+    text-align: center;
+    @include phone {
+        font-size: 30px;;
+    }
+    @include phone-large {
+        font-size: 40px;
+    }
+    @include tablet {
+        font-size: 50px;
+    }
+    @include desktop() {
+        font-size: 55px;
+    }
+    }
+  
+@mixin profil{
+    color: #000000;
+    font-size: 27px;
+    text-align: center;
+}
+
+@mixin midlle_case{
+    background-color: #ffffff;
+    margin: 4%;
+    border-radius: 20px;
+                flex-wrap: wrap;
+            display: flex;
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;}
+        @include phone() {
+            width: 35%;
+        }
+        @include phone-large() {
+            width: 35%;
+        }
+        @include tablet() {
+            width: 40%;
+        }
+        @include desktop() {
+            width: 40%;
+        }
+}
+
+@mixin smalle_case{
+    width: 100%;
+    background-color: #ffffff;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+@mixin multiple_cases{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+@mixin p{
+    color: #000000;
+    text-align: center;
+}
+
+@mixin img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+
+}
+
+@mixin buton_recherche{
+    width: 30%;
+    padding: 3%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.8);
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;
+        
+}}
+
+@mixin buton_github{
+    width: 30%;
+    padding: 3%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.8);
+    text-align: center;
+    position: relative;
+    &:hover{
+        box-shadow: inset -1px 3px 8px 5px rgb(89, 128, 187);
+        border-radius: 10px;}
+}
+@mixin butons{
+    display: flex;
+    bottom: 17%;
+    position: relative;
+    width:100%;
+    justify-content: space-around
+}
+@mixin keyframes($anim){
+    @keyframes #{$anim}{
+        @content;
+    }
+}
+
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+@mixin index_page {
+    text-align:center;
+    background: linear-gradient(141deg, #000 25%, rgb(60, 57, 41) 40%, #000 55%);
+    color:#ffffff;
+    font-family:'Roboto';
+    font-weight:300;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    display: grid;
+    width: 100%;
+    @include phone {
+        height:385%;
+        font-size:30px;
+    }
+    @include phone-large {
+        height:330%;
+        font-size:40px;
+    }
+    @include tablet {
+        height:240%;
+        font-size:60px;
+    }
+    @include desktop() {
+        height:240%;
+        font-size:72px;
+    }
+  }
+
+  @mixin texte1{
+    padding-top: 50px;
+  }
+
+  @mixin div {
+    display:inline-block;
+    white-space:nowrap;
+  }
+
+
+  @keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    100% {opacity:1;}
+}
+@keyframes slidein {
+    0% { margin-left:-2000px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;;}
+    20% {opacity:1;}
+    100% {opacity:1;}
+}
+
+    //div:first-of-type
+  @mixin div_first-of-type {   
+    animation: showup 4s ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+  //div:last-of-type
+  @mixin div_last-of-type {
+    animation: reveal 4s ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+  @mixin div_last-of-type_span {
+    animation: slidein 4s ease-in-out;
+    animation-iteration-count: 1;
+  }
