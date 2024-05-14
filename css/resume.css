@@ -1,0 +1,106 @@
+.lien{
+    text-align: center;
+    padding: 25px;
+}
+.image{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    font-size: 1.5rem;
+}
+.image p{
+    padding: 10px;
+}
+.imageTitre{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0px 0px 50px 0px;
+}
+.titre{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+.liste{
+    display: grid;
+}
+
+.part1{
+    display: grid;
+    background: linear-gradient(141deg, #945ea5 30%, #5259b5 70%);
+    padding: 5% 15%;
+    border-bottom: 5px solid #A4A4A4;
+}
+.part2, .part3, .part4, .part5{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 5% 15%;
+    border-bottom: 5px solid #A4A4A4;
+    
+}
+.part4 .milieu {
+    width: min-content;
+    
+    padding-right: 100px;
+}
+.part4 .droite {
+    width: min-content;
+}
+.gauche1, .gauche2, .gauche3, .gauche4, .gauche5{
+
+width:250px;
+}
+.milieu{
+    display: grid;
+    width: max-content;
+    
+    padding-right: 100px;
+}
+.droite{
+    display: grid;
+    width: max-content;
+}
+.linkedin,.site ,.telephone ,.github ,.mail {
+    background-color: white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+.linkedin,.telephone {
+    color: black;
+}
+.site,.github {
+    color: rgb(40, 9, 219);
+}
+.mail {
+    color: rgb(209, 7, 216);
+}
+.liens{
+    display: flex;
+    gap: 20px;
+    
+    flex-wrap: wrap;
+}
+.techno{
+    display: flex;
+    gap: 20px;
+}
+.techno p{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+}
+.bas{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    margin: 0px;
+}
