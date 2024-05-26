@@ -1,7 +1,8 @@
 header{
 	display: flex;
     background-color: #2a6565;
-	padding: 20px 0px 20px 70%;
+	padding: 20px 0px 20px 0px;
+	justify-content: end;
 
 }
 body{
@@ -14,7 +15,7 @@ body{
     color: #ffffff;
     font-family: "Roboto";
     font-weight: 300;
-	padding: 0px 100px;
+	padding: 0px 10%;
 }
 
 .haut{
@@ -58,7 +59,7 @@ body{
 .frame_titre{
 	background-color: #2a6565;;
 	padding: 10px 0px;
-	font-size: 5rem;
+	font-size: 3rem;
 }
 
 .case_img img{
@@ -67,8 +68,23 @@ body{
 }
 
 p{
-	font-size: 2rem;
 	text-decoration: none;
 	color: #ffffff;
+}
+
+button{
+	width: 100%;
+    font-size: 100%;
+}
+button:hover{
+	box-shadow: 5px 5px 15px 5px #000000;
+}
+.liens{
+	display: grid;
+	gap: 40px;
+	margin-top: 50px;
+}
+img{
+	width: 100%;
 }
 
